@@ -17,7 +17,7 @@ async function buffer(readable: Readable) {
 
 export const config = {
   api: {
-    borderParser: false
+    bodyParser: false
   }
 }
 
