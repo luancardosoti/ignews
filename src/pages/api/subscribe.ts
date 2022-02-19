@@ -13,7 +13,7 @@ type User = {
   }
 }
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function subscribe(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const session = await getSession({ req });
 
@@ -54,7 +54,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
       payment_method_types: ['card'],
       billing_address_collection: 'required',
       line_items: [
-        { price: 'price_1K4F2CCawfYf9RHTtYxe1267', quantity: 1 }
+        { price: 'price_1KUwC9CawfYf9RHTwYuMCnPj', quantity: 1 }
       ],
       mode: 'subscription',
       allow_promotion_codes: true,
